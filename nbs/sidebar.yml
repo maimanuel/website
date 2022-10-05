@@ -1,5 +1,4 @@
 website:
-  sidebar:
-    contents:
-      - index.ipynb
-      - 00_About.ipynb
+  sidebar: false
+#    contents:
+#      - 00_About.ipynb

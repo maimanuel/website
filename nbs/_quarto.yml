@@ -1,20 +1,39 @@
 project:
   type: website
-
+  title: Manuel Mai
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    css: index.css
     toc: true
+    section-divs: false
+    
+custom_quarto_yml: True
 
 website:
   twitter-card: true
   open-graph: true
   repo-actions: none #[issue]
+  sidebar: false
+#    style: "floating"
+#    background: "#333333"
   navbar:
     background: primary
-    search: true
-  sidebar:
     style: floating
+    search: true
+    collapse-below: lg
+    left:
+      - text: "About"
+        href: 00_About.ipynb
+      - text: "Blog"
+        href: blog/index.qmd
 
-metadata-files: [nbdev.yml, sidebar.yml]
+    right:
+      - icon: linkedin
+        href: "https://www.linkedin.com/in/manuel-mai/"
+      - icon: github
+        href: "https://github.com/maimanuel"
+      - icon: twitter
+        href: "https://twitter.com/manuelmai"
+        aria-label: Github Twitter
+
+metadata-files: [manuelmai.yml]
